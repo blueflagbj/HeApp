@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/manager_info_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_mgrinfo" />
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:textSize="@dimen/text_size_medium" android:textColor="@android:color/holo_blue_dark" android:id="@id/btn_follow" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="追踪" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/text_size_medium" android:textColor="@android:color/holo_blue_dark" android:id="@id/btn_track" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="轨迹" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/text_size_medium" android:textColor="@android:color/holo_blue_dark" android:id="@id/btn_commond" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="指令" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/text_size_medium" android:textColor="@android:color/holo_blue_dark" android:id="@id/btn_msg" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="信息" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+    <!-- 请求主机名或请求地址。包括服务器的ip地址和端口
+    测试环境：10.218.34.29:28083
+    生产环境地址:211.138.17.10:20100-->
+
+    <config name="request_host" value="http://211.138.17.10:20100"/>
+    <!--<config name="request_host" value="http://10.218.34.5:28081"/>-->
+
+    <!-- 必须。容器应用名或请求根路径 -->
+    <config name="request_path" value="/gateway"/>
+    <!-- 必须。数据接口的servlet路径 -->
+    <config name="request_servlet" value="/mobiledata"/>
+    <!-- 非必须，默认应用名。sd卡上的应用根目录名字,解决应用中文名的问题 -->
+    <config name="app_path" value="gatewayClient"/>
+    <!-- 非必须，默认UTF-8。 应用需要用到的编码 -->
+    <config name="encode" value="UTF-8"/>
+    <!-- 非必须， 默认false。是否开启多WebView模式 -->
+    <config name="is_mult_webview" value="true"/>
+    <!-- 必须。应用license 应用名称：新版和助手
+        登记时间：2019-08-28
+        失效日期：2022-08-27
+     -->
+    <config name="license" value="ReC3jpUwZ7inwfK5FrmdSX0MnawyKzRWC3jGRhTGKwYzizrO1I--E3LEHGVxoIqOwDQKMwLsG5reeM6QZtydfYIaAdDpOpKGm0sK2NTSNI71svETtUGUNmKkQkQOC7TqzbuNb9qBu-4Rb4eFAWMYPtGidnIMOgoYSBS5G-xA3c8=|@@MDA5RkMzMzE5RUU0QzVBQTA5MDdCQ0QxMDJBNTNCQjczNzI2RTY2RjRGOTBDMTI4MTMzMzMwNTQwRDFDMDAwQTkxNjZBMUVCMTAyOTJBMEEzM0MyNDlEOEI2OTc4RUVFNjBDMTJDMkM1RkM5ODgzOTY1RTFEQUNCRkY3NzNGRkE2RDhCNzEwRTJFQUVEMUI4QTlFREQzQ0NFNTk0QTc3OUZFNTMyQTZGNDI0OUFENzc4QjA2RTE4QkNCMTBGRTBGOTM4RENGMDM0Njk3N0Q1Q0VFOTNGOENGNDM3RDFEMzZBMDQ0Njk4MDhGODlENTA5NDkwMzEwQjIxRkYzOEQyREQ5" ></config>
+    <!-- 非必须。进入应用时的欢迎页面 --><!-- file:///android_asset为固定写法，表示工程的asset目录 -->
+    <config name="loading_page" value="file:///android_asset/template/webapp/loading.html"/>
+
+    <!-- 非必须。更新应用的url -->
+    <!--<config name="update_url" value="http://211.138.17.10:20100/gateway/setup/unifyManage-client.apk"/>-->
+    <!--新客户端下载地址-->
+    <config name="update_url" value="http://211.138.17.25:20100/gateway/setup/unifyManage-client.apk"/>
+    <!-- <config name="update_url" value="http://10.218.34.29:28083/gateway/setup/unifyManage-client-test.apk"/> -->
+
+    <!-- 推送平台服务地址 -->
+    <config name="push_address" value="192.168.100.224"/>
+    <!-- 推送平台服务端口 -->
+    <config name="push_port" value="23456"/>
+    <!-- 非必须，默认false。是否强制更新 -->
+    <config name="is_force_update" value="false"/>
+    <!-- 非必须，默认2。缓存模式 --><!-- APP_CACHE_MODE -1:LOAD_DEFAULT,0:LOAD_NORMAL,1:LOAD_CACHE_ELSE_NETWORK,2:LOAD_NO_CACHE,3:LOAD_CACHE_ONLY -->
+    <config name="cache_mode" value="2"/>
+    <!-- *********非模板引擎时使用的配置********* -->
+    <!-- 非必须，默认false。页面过渡是否显示loading对话框 -->
+    <config name="is_loading_dialog" value="false"/>
+    <!-- 非必须。页面过渡的loading图片 -->
+    <config name="loading_bg_image" value=""/>
+    <!-- 非必须,默认false。页面加载超时是否弹出重试对话框 -->
+    <config name="is_overtime_retry" value="false"/>
+    <!-- 非必须,默认20000。页面加载的超时时间 -->
+    <config name="loadurl_timeout" value="20000"/>
+    <!-- 非必须，默认false。打开调试模式，不再比对资源版本，客户端每次下载所有资源-->
+    <config name="is_debug" value="false"/>
+    <!-- 安全的进行js对象注入，默认true -->
+    <config name="safe_inject" value="true" />
+</configs>

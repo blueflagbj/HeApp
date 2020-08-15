@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/topbar_follow" android:layout_width="fill_parent" android:layout_height="45.0dip" layout="@layout/topbar" />
+    <FrameLayout android:id="@id/fl_follow_map" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/layout_follow_mgrinfo" android:layout_below="@id/topbar_follow" />
+    <include android:id="@id/layout_follow_mgrinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/layout_mgrinfo" />
+</RelativeLayout>

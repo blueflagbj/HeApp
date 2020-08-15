@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffeeeeee" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_above="@id/submit">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableLayout android:orientation="vertical" android:background="@drawable/textfield_disabled" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow android:layout_marginTop="10.0dip">
+                    <TextView android:id="@id/label_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务号码:" android:ems="5" />
+                    <AutoCompleteTextView android:id="@id/input_phone" android:background="@drawable/edit_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:completionThreshold="1" android:layout_weight="1.0" android:inputType="phone" />
+                    <Button android:id="@id/openPlug" android:background="@drawable/button_shape" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:text="实名信息采集" android:layout_alignParentRight="true" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:id="@id/label_idcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="身份证号码:" android:ems="5" />
+                    <EditText android:id="@id/input_idcard" android:layout_width="0.0dip" android:layout_height="wrap_content" android:digits="0123456789xyzXYZ" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionDone" />
+                    <Button android:id="@id/idcard_query" android:background="@drawable/button_shape" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:text="检索" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sim卡号:" android:ems="5" />
+                    <EditText android:id="@id/input_sim" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:imeOptions="actionDone" />
+                    <Button android:id="@id/sim_query" android:background="@drawable/button_shape" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:text="验证" />
+                </TableRow>
+            </TableLayout>
+            <TextView android:textSize="20.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="套餐选择" />
+            <TableLayout android:orientation="vertical" android:background="@drawable/textfield_disabled" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView android:id="@id/label_kbfy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="捆绑费用:" android:ems="5" />
+                    <EditText android:enabled="false" android:id="@id/input_kbfy" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <TextView android:id="@id/label_kbcp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="捆绑产品:" android:ems="5" />
+                    <EditText android:enabled="false" android:id="@id/input_kbcp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择套餐:" android:ems="5" />
+                    <EditText android:enabled="false" android:id="@id/input_package" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <Button android:id="@id/btn_select_package" android:background="@drawable/button_shape" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:text="检索" />
+                </TableRow>
+                <TableRow android:id="@id/block_cell" android:visibility="gone" android:layout_marginTop="10.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择小区:" android:ems="5" />
+                    <EditText android:enabled="false" android:id="@id/input_cell" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <Button android:id="@id/btn_select_cell" android:background="@drawable/button_shape" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:text="检索" />
+                </TableRow>
+            </TableLayout>
+            <TextView android:textSize="20.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="客户信息" />
+            <TableLayout android:orientation="vertical" android:background="@drawable/textfield_disabled" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客户姓名:" android:ems="5" />
+                    <EditText android:id="@id/input_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="性别:" android:ems="5" />
+                    <EditText android:enabled="false" android:id="@id/input_gender" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出生日期:" android:ems="5" />
+                    <EditText android:enabled="false" android:id="@id/input_birthday" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="居住地址:" android:ems="5" />
+                    <EditText android:id="@id/input_address" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证件地址:" android:ems="5" />
+                    <EditText android:id="@id/input_cardaddress" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系人姓名:" android:ems="5" />
+                    <EditText android:id="@id/input_contact_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系人电话:" android:ems="5" />
+                    <EditText android:id="@id/input_contact_phone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/submit" android:background="@drawable/button_shape" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="10.0dip" android:text="确认开户" android:layout_alignParentBottom="true" />
+</RelativeLayout>

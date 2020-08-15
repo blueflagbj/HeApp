@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="475.0">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableRow android:background="@drawable/login_rectangle_hollow">
+                <TextView android:textColor="@android:color/white" android:id="@id/label_username2" android:layout_marginLeft="8.0dip" android:text="手机号：" style="@style/wrap_content" />
+                <AutoCompleteTextView android:textColor="#ffffffff" android:id="@id/input_username2" android:background="@null" android:layout_width="0.0dip" android:layout_height="35.0dip" android:ems="10" android:singleLine="true" android:maxLength="40" android:completionThreshold="1" android:layout_weight="3.0" android:inputType="number" android:imeOptions="actionNext" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/tv_channel_change" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="签约渠道登录" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:id="@id/table_account" android:background="@drawable/login_rectangle_hollow" android:layout_marginTop="15.0dip">
+                <TextView android:textColor="@android:color/white" android:id="@id/lable_staff_number" android:layout_marginLeft="8.0dip" android:text="工    号:" style="@style/wrap_content" />
+                <EditText android:id="@id/input_staff_number" android:text="" android:ems="10" android:maxLength="40" android:imeOptions="actionNext" style="@style/login" />
+            </TableRow>
+            <TableRow android:background="@drawable/login_rectangle_hollow" android:layout_marginTop="15.0dip">
+                <TextView android:textColor="@android:color/white" android:id="@id/label_password2" android:layout_marginLeft="8.0dip" android:text="@string/login_password" style="@style/wrap_content" />
+                <EditText android:id="@id/input_password2" android:text="" android:maxLength="40" android:inputType="textPassword" android:imeOptions="actionNext" style="@style/login" />
+                <CheckBox android:textColor="@android:color/white" android:layout_gravity="right" android:id="@id/remember_pwd2" android:layout_width="@dimen/button_width" android:layout_height="30.0dip" android:layout_marginRight="8.0dip" android:text="记住密码" />
+            </TableRow>
+            <TableRow android:background="@drawable/login_rectangle_hollow" android:layout_marginTop="15.0dip">
+                <TextView android:textColor="@android:color/white" android:id="@id/label_verifycode2" android:layout_marginLeft="8.0dip" android:text="@string/login_verifycode" style="@style/wrap_content" />
+                <EditText android:id="@id/input_verifycode2" android:text="" android:singleLine="true" android:inputType="number" android:imeOptions="actionDone" style="@style/login" />
+                <com.ai.cmcchina.crm.view.VerifyCodeView android:id="@id/view_verifycode2" android:visibility="gone" android:layout_width="@dimen/button_width" android:layout_height="@dimen/widget_height" android:layout_marginLeft="@dimen/column_padding" />
+                <TextView android:layout_gravity="right" android:id="@id/textView_send_sms2" android:layout_width="wrap_content" android:layout_height="@dimen/widget_height" android:layout_marginRight="8.0dip" android:text="发送验证" />
+            </TableRow>
+            <View android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:layout_gravity="right" android:id="@id/helper2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="非签约渠道注册" />
+            <Button android:id="@id/button_login2" android:background="@drawable/login_rectangle_solid" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:text="@string/login" />
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:ellipsize="marquee" android:gravity="center" android:layout_marginTop="10.0dip" android:text="@string/message" android:marqueeRepeatLimit="marquee_forever" style="@style/match_parent" />
+        </TableLayout>
+    </ScrollView>
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="right" android:id="@id/gesture_password_login2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="手势密码登录" />
+</LinearLayout>

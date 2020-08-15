@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/cellName" android:background="@drawable/edit_text_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:minWidth="260.0dip" android:hint="小区名称" />
+    <EditText android:id="@id/cellDesc" android:background="@drawable/edit_text_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:hint="位置描述" android:minLines="1" android:inputType="textMultiLine" />
+    <EditText android:id="@id/remark" android:background="@drawable/edit_text_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:hint="备注" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <Button android:id="@id/commit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="采集" android:layout_weight="1.0" />
+        <Button android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="取消" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

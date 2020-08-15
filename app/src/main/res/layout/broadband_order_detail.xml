@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <LinearLayout android:orientation="vertical" android:background="#fff0eff4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                <TextView android:text="订单编号: " style="@style/broadband_attr" />
+                <TextView android:text="599972" style="@style/broadband_attr" />
+            </LinearLayout>
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="0.100000024px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                <TextView android:text="订单类型: " style="@style/broadband_attr" />
+                <TextView android:text="手机宽带订购" style="@style/broadband_attr" />
+            </LinearLayout>
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="0.100000024px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                <TextView android:text="办理时间: " style="@style/broadband_attr" />
+                <TextView android:text="" style="@style/broadband_attr" />
+            </LinearLayout>
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="0.100000024px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                <TextView android:text="宽带号码: " style="@style/broadband_attr" />
+                <TextView android:text="" style="@style/broadband_attr" />
+            </LinearLayout>
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="0.100000024px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                <TextView android:text="订单状态: " style="@style/broadband_attr" />
+                <TextView android:text="" style="@style/broadband_attr" />
+            </LinearLayout>
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="0.100000024px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                <TextView android:text="工单节点: " style="@style/broadband_attr" />
+                <TextView android:text="" style="@style/broadband_attr" />
+            </LinearLayout>
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="0.100000024px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                <TextView android:text="节点状态: " style="@style/broadband_attr" />
+                <TextView android:text="" style="@style/broadband_attr" />
+            </LinearLayout>
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="0.100000024px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                <TextView android:text="联系电话: " style="@style/broadband_attr" />
+                <TextView android:text="" style="@style/broadband_attr" />
+            </LinearLayout>
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="0.100000024px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                <TextView android:text="网络侧操作员姓名: " style="@style/broadband_attr" />
+                <TextView android:text="" style="@style/broadband_attr" />
+            </LinearLayout>
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="0.100000024px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+                <TextView android:text="网络侧操作员工号: " style="@style/broadband_attr" />
+                <TextView android:text="" style="@style/broadband_attr" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/search_btn" android:background="@drawable/btn_ok_bule" android:layout_width="80.0dip" android:layout_height="35.0dip" android:layout_marginTop="40.0dip" android:text="@string/ok" android:singleLine="true" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="#ffc6e9e9" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/black" android:gravity="center" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="宽带属性" />
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:text="计费号:" style="@style/broadband_attr" />
+                <TextView android:text="\ 9371192349" style="@style/broadband_attr" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:text="接入方式:" style="@style/broadband_attr" />
+                <TextView android:text="FTTP" style="@style/broadband_attr" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:text="手机号码:" style="@style/broadband_attr" />
+                <TextView android:text="\ 15238077526" style="@style/broadband_attr" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:text="接入方式:" style="@style/broadband_attr" />
+                <TextView android:text="FTTP" style="@style/broadband_attr" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:text="受理人:" style="@style/broadband_attr" />
+                <TextView android:text="\ 15238077526" style="@style/broadband_attr" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:text="受理人电话:" style="@style/broadband_attr" />
+                <TextView android:text="\ 15238077526" style="@style/broadband_attr" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:text="联系人:" style="@style/broadband_attr" />
+                <TextView android:text="李四" style="@style/broadband_attr" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:text="联系人电话:" style="@style/broadband_attr" />
+                <TextView android:text="\ 15238077526" style="@style/broadband_attr" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+            <TextView android:text="标准地址:" style="@style/broadband_attr" />
+            <TextView android:text="河南省郑州市管城回族区解放路182号" style="@style/broadband_attr" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+            <TextView android:text="终端类型:" style="@style/broadband_attr" />
+            <TextView android:text="" style="@style/broadband_attr" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+            <TextView android:text="整合通信固话号码" style="@style/broadband_attr" />
+            <TextView android:text="" style="@style/broadband_attr" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+            <TextView android:text="是否需要输入设备SN码:" style="@style/broadband_attr" />
+            <TextView android:text="" style="@style/broadband_attr" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+            <TextView android:text="设备SN码:" style="@style/broadband_attr" />
+            <TextView android:text="" style="@style/broadband_attr" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+            <TextView android:text="改单原因" style="@style/broadband_attr" />
+            <TextView android:text="" style="@style/broadband_attr" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="50.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/text_size_small" android:id="@id/confirm_btn" android:background="@drawable/btn_ok_bule" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.5" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/text_size_small" android:id="@id/detail_info" android:background="@drawable/btn_ok_bule" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="详细信息" android:layout_weight="1.5" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

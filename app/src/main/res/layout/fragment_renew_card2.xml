@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="原卡号码:" android:ems="5" />
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/userNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="原卡类型:" android:ems="5" />
+                <TextView android:textSize="16.0sp" android:id="@id/userCardType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务号码:" android:ems="5" />
+                <TextView android:textSize="16.0sp" android:id="@id/serveNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="空白卡:" android:ems="5" />
+                <RadioGroup android:orientation="horizontal" android:id="@id/emptyCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@id/emptyCardTrue" android:layout_weight="1.0">
+                    <RadioButton android:textColor="@android:color/black" android:id="@id/emptyCardTrue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="是" />
+                    <RadioButton android:textColor="@android:color/black" android:id="@id/emptyCardFalse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="否" />
+                </RadioGroup>
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="读卡器输入:" android:ems="5" />
+                <Button android:textColor="#ff333333" android:id="@id/readCardInput" android:background="@drawable/btn1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="读空白卡" android:layout_weight="1.0" />
+                <TextView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 1234567890" />
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="空卡序列号:" android:ems="5" />
+                <EditText android:id="@id/emptyCardNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="不可手输" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" />
+            </TableRow>
+            <TableRow android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新SIM卡号:" android:ems="5" />
+                <EditText android:id="@id/newSIMNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" />
+            </TableRow>
+            <TableRow android:id="@id/note_table_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="换卡备注:" android:ems="5" />
+                <EditText android:id="@id/replace_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" />
+            </TableRow>
+            <TableRow android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新卡类型:" android:ems="5" />
+                <EditText android:id="@id/newCardType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" />
+            </TableRow>
+            <TableRow android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="现象说明:" android:ems="5" />
+                <EditText android:id="@id/indicates" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" />
+            </TableRow>
+            <TableRow android:id="@id/offer_table_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="营销活动:" android:ems="5" />
+                <EditText android:id="@id/offer" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="可不选" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" />
+                <Button android:textColor="#ff333333" android:id="@id/choose_offer" android:background="@drawable/btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.5dip" android:text="选择" />
+            </TableRow>
+        </TableLayout>
+        <Button android:textSize="18.0sp" android:id="@id/costingBt" android:background="@drawable/button_shape" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="费用计算" />
+    </LinearLayout>
+</ScrollView>

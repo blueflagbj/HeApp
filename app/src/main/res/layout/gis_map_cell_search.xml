@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.esri.android.map.MapView android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/top" android:background="@drawable/top_background" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btnSearch" android:background="@drawable/btn_ok_bule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="searchCell" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rlSearchFrameDelete" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btnSearch" android:layout_centerVertical="true">
+            <EditText android:textSize="12.0sp" android:id="@id/etSearch" android:background="@drawable/search_frame" android:paddingLeft="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:hint="请输入小区名称" android:singleLine="true">
+                <requestFocus />
+            </EditText>
+            <ImageView android:id="@id/ivDeleteText" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/delete" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

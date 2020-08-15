@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/bg_report" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/cell_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:text="小区名称" android:layout_weight="1.0" style="@style/report_TextView_style" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_report" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:layout_weight="1.0">
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="10M以下" android:layout_weight="1.0" style="@style/report_TextView_style" />
+            <TextView android:gravity="center" android:id="@id/below_ten_num" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="500" android:layout_weight="1.0" style="@style/report_TextView_style" />
+            <TextView android:gravity="center" android:id="@id/below_ten_percentage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="10" android:layout_weight="1.0" style="@style/report_TextView_style" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_report" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:layout_weight="1.0">
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="10M及以上" android:layout_weight="1.0" style="@style/report_TextView_style" />
+            <TextView android:gravity="center" android:id="@id/above_ten_num" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="2000" android:layout_weight="1.0" style="@style/report_TextView_style" />
+            <TextView android:gravity="center" android:id="@id/above_ten_percentage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="40" android:layout_weight="1.0" style="@style/report_TextView_style" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_report" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:layout_weight="1.0">
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="20M及以上" android:layout_weight="1.0" style="@style/report_TextView_style" />
+            <TextView android:gravity="center" android:id="@id/above_twenty_num" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="500" android:layout_weight="1.0" style="@style/report_TextView_style" />
+            <TextView android:gravity="center" android:id="@id/above_twenty_percentage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="10" android:layout_weight="1.0" style="@style/report_TextView_style" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_report" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:layout_weight="1.0">
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="50M及以上" android:layout_weight="1.0" style="@style/report_TextView_style" />
+            <TextView android:gravity="center" android:id="@id/above_fifty_num" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="500" android:layout_weight="1.0" style="@style/report_TextView_style" />
+            <TextView android:gravity="center" android:id="@id/above_fifty_percentage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="10" android:layout_weight="1.0" style="@style/report_TextView_style" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_report" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:layout_weight="1.0">
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="100M" android:layout_weight="1.0" style="@style/report_TextView_style" />
+            <TextView android:gravity="center" android:id="@id/one_hundred_num" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="1000" android:layout_weight="1.0" style="@style/report_TextView_style" />
+            <TextView android:gravity="center" android:id="@id/one_hundred_percentage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="20" android:layout_weight="1.0" style="@style/report_TextView_style" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

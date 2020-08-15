@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ProgressBar android:id="@id/recordLoadingBar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminateDrawable="@drawable/report_loading_progressbar_cricle_style" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/text_size_medium" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/report_loading" android:layout_below="@id/recordLoadingBar" android:layout_centerHorizontal="true" />
+</RelativeLayout>

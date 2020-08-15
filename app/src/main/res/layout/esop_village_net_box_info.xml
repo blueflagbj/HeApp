@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/village_name_la" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小区名字：" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/village_name_v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/net_box_sum_port" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总共端口数：" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/sum_port_v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/net_box_used_port" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已用端口数：" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/used_port_v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/net_box_free_port" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="剩余端口数：" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/free_port_v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/fiber_box_pic_ly" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="光交箱图片：" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/fiber_box_pic_v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

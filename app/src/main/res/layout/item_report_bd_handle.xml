@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/bg_report" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/bd_account" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="宽带账号" android:layout_weight="3.0" style="@style/report_TextView_style" />
+    <TextView android:gravity="center" android:id="@id/speed_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="套餐速率" android:layout_weight="2.0" style="@style/report_TextView_style" />
+    <TextView android:gravity="center" android:id="@id/install_tel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="装机电话" android:layout_weight="3.0" style="@style/report_TextView_style" />
+    <TextView android:textSize="@dimen/text_size_large" android:gravity="center" android:id="@id/show_detail" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text=">" android:layout_weight="1.0" style="@style/report_TextView_style" />
+</LinearLayout>

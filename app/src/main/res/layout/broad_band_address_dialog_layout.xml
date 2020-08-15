@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ddd5fffd" android:paddingLeft="@dimen/margin_form" android:paddingTop="@dimen/margin_form" android:paddingBottom="@dimen/margin_form" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:crm="http://schemas.android.com/apk/res-auto">
+    <com.ai.cmcchina.crm.util.PullToRefreshListView android:id="@id/pullList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_item_selector" android:cacheColorHint="#00000000" android:divider="@android:drawable/divider_horizontal_bright" android:layout_below="@id/top" android:headerDividersEnabled="true" android:footerDividersEnabled="true" crm:mode="pullUpFromBottom" />
+</LinearLayout>

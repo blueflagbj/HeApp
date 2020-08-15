@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_medium" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="手机号：" android:layout_weight="1.2" />
+                <EditText android:textSize="@dimen/text_size_medium" android:id="@id/telephone_num" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="请输入手机号码" android:maxLength="11" android:layout_weight="2.0" android:inputType="phone" />
+            </LinearLayout>
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/detail_linear_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_medium" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="副卡类型：" android:layout_weight="1.2" />
+                    <TextView android:textSize="@dimen/text_size_medium" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="家和卡" android:layout_weight="2.0" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:orientation="horizontal" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_medium" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="验证方式：" android:layout_weight="1.2" />
+                    <TextView android:textSize="@dimen/text_size_medium" android:id="@id/select_validate_type" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="服务密码  + 短信验证码" android:layout_weight="2.0" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:orientation="horizontal" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_medium" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="服务密码：" android:layout_weight="1.2" />
+                    <EditText android:textSize="@dimen/text_size_medium" android:id="@id/service_password" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="请输入密码" android:maxLength="6" android:layout_weight="2.0" android:inputType="numberPassword" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:orientation="horizontal" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_medium" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="短信随机码：" android:layout_weight="1.2" />
+                    <EditText android:textSize="@dimen/text_size_medium" android:id="@id/sms_code" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="短信随机码" android:maxLength="6" android:layout_weight="1.0" android:inputType="number" />
+                    <Button android:textSize="@dimen/text_size_medium" android:id="@id/sms_code_btn" android:background="@drawable/btn_bg_gray" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="获取" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:orientation="horizontal" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_medium" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="缴费方式：" android:layout_weight="1.2" />
+                    <TextView android:textSize="@dimen/text_size_medium" android:id="@id/pay_type_select" android:background="@drawable/shape_linearlayout_noconer" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="支付宝" android:drawableRight="@drawable/list_down" android:layout_weight="2.0" />
+                </LinearLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/text_size_medium" android:id="@id/validate_user_btn" android:background="@drawable/btn_ok_bule" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="验证用户身份" />
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_shap_rectangle_blue_color" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <TextView android:textSize="@dimen/text_size_medium" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="角色" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_medium" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="副卡类型" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_medium" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="成员号码" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_medium" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="短号" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_medium" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详情" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+            <com.ai.cmcchina.crm.customview.CustomListView android:id="@id/list_view" android:background="@drawable/bg_shap_rectangle_blue_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+            <Button android:enabled="false" android:id="@id/electronic_order" android:background="@drawable/btn_bg_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="用户签名并生成电子工单" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

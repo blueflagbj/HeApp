@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="姓名：" />
+        <EditText android:id="@id/input_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:hint="请输入需要办理人姓名" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="号码：" />
+        <EditText android:id="@id/input_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:hint="请输入需要办理人号码" android:numeric="integer" android:inputType="number" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <Button android:id="@id/OK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="确定办理" />
+</LinearLayout>

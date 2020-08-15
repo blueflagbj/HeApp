@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_large">28.0px</dimen>
+    <dimen name="text_size_medium">24.0px</dimen>
+    <dimen name="text_size_small">18.0px</dimen>
+    <dimen name="button_width">120.0px</dimen>
+    <dimen name="column_padding">12.0px</dimen>
+    <dimen name="form_padding">35.0px</dimen>
+    <dimen name="oper_default_height">50.0px</dimen>
+    <dimen name="row_padding">18.0px</dimen>
+    <dimen name="userview_height">50.0px</dimen>
+    <dimen name="userview_sub_height">38.0px</dimen>
+    <dimen name="userviewtab_login_height">67.0px</dimen>
+    <dimen name="userviewtab_login_heightGT">50.0px</dimen>
+    <dimen name="widget_height">50.0px</dimen>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:layout_gravity="right" android:id="@id/tv_share_circle" android:background="#ff1e90ff" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginRight="6.0dip" android:text="分享朋友圈      " android:drawableLeft="@drawable/wechat_share_circle" />
+    <TextView android:layout_gravity="right" android:id="@id/view" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:layout_gravity="right" android:id="@id/tv_share_friend" android:background="#ff1e90ff" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginRight="6.0dip" android:text="发送给好友      " android:drawableLeft="@drawable/wechat_share_friend" />
+</LinearLayout>

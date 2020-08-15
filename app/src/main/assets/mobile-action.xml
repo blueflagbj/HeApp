@@ -1,0 +1,254 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<actions>
+    <!--    Example Action -->
+    <!--    <action intentName="Intent name (actions.intent.*)"> -->
+    <!--        <action-display -->
+    <!--            icon="@mipmap/..." -->
+    <!--            labelTemplate="@array/..." /> -->
+    <!--        <fulfillment urlTemplate="Action content URI or URL"> -->
+    <!--            <parameter-mapping -->
+    <!--                intentParameter="Parameter name in Intent URI" -->
+    <!--                urlParameter="Parameter name in URL" /> -->
+    <!--        </fulfillment> -->
+    <!--    </action> -->
+    <!-- 添加水印 -->
+    <action name="addWaterMark" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="addWaterMark"></action>
+    <!-- 打开第三方原生做实名认证的app -->
+    <!--<action name="openRealNameAuthClient" class="com.ai.cmcchina.multiple.func.RealNameAuthPlugin" method="open10085App"></action>-->
+    <!-- 下载第三方原生做实名认证的app -->
+   <!-- <action name="downRealNameAuthClient" class="com.ai.cmcchina.multiple.func.RealNameAuthPlugin" method="downLoad10085Apk"></action>-->
+
+    <!-- 获取绑定的蓝牙设备 -->
+   <!-- <action name="getBlueToothBondedDevices" class="com.ai.cmcchina.multiple.func.BlueToothPlugin" method="getBlueToothBondedDevices"></action>-->
+    <!-- 获取活动的蓝牙设备（除绑定的外） -->
+  <!--  <action name="getBlueToothActiveDevices" class="com.ai.cmcchina.multiple.func.BlueToothPlugin" method="getBlueToothActiveDevices"></action>-->
+    <!-- 读SIM卡信息（参数：蓝牙信息） -->
+   <!-- <action name="readSIMCard" class="com.ai.cmcchina.multiple.func.SIMCardPlugin" method="readSIMCard"></action>-->
+    <!-- 写SIM卡（包含参数：写卡数据和蓝牙信息） -->
+  <!--  <action name="writeSIMCardByBHT" class="com.ai.cmcchina.multiple.func.SIMCardPlugin" method="writeSIMCard"></action>-->
+
+    <action name="openIpuApp" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="openIpuApp"/>
+    <action name="initAppConfig" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="initAppConfig"/>
+    <action name="openSubAppPage" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="openSubAppPage"/>
+
+    <!-- MobileBasic -->
+    <action name="call" class="com.wade.mobile.func.MobileBasic" method="call"/>
+    <action name="beep" class="com.wade.mobile.func.MobileBasic" method="beep"/>
+    <action name="sms" class="com.wade.mobile.func.MobileBasic" method = "sms"/>
+    <action name="shock" class="com.wade.mobile.func.MobileBasic" method="shock"/>
+    <!-- MobileApp -->
+    <action name="close" class="com.wade.mobile.func.MobileApp" method="close"/>
+    <action name="logCat" class="com.wade.mobile.func.MobileApp" method="logCat"/>
+    <!-- MobileNetWork -->
+   <!-- <action name="httpGet" class="com.wade.mobile.func.MobileNetWork" method="httpGet"></action>-->
+    <action name="dataRequest" class="com.wade.mobile.func.MobileNetWork" method="dataRequest"/>
+    <action name="httpRequest" class="com.wade.mobile.func.MobileNetWork" method="httpRequest"/>
+    <action name="storageDataByThread" class="com.wade.mobile.func.MobileNetWork" method="storageDataByThread"/>
+    <action name="httpDownloadFile" class="com.wade.mobile.func.MobileNetWork" method = "httpDownloadFile"/>
+    <action name="shareByBluetooth" class="com.wade.mobile.func.MobileNetWork" method="shareByBluetooth"/>
+    <action name="setSmsListener" class="com.wade.mobile.func.MobileNetWork" method="setSmsListener"/>
+    <action name="downloadWithServlet" class="com.wade.mobile.func.MobileNetWork" method="downloadWithServlet"/>
+    <action name="uploadWithServlet" class="com.wade.mobile.func.MobileNetWork" method="uploadWithServlet"/>
+    <!-- MobileUI -->
+    <action name="tip" class="com.wade.mobile.func.MobileUI" method="tip"/>
+    <action name="openUrl" class="com.wade.mobile.func.MobileUI" method="openUrl"/>
+    <action name="openPage" class="com.wade.mobile.func.MobileUI" method="openPage"/>
+    <action name="openTemplate" class="com.wade.mobile.func.MobileUI" method="openTemplate"/>
+    <action name="getTemplate" class="com.wade.mobile.func.MobileUI" method="getTemplate"/>
+    <action name="getPage" class="com.wade.mobile.func.MobileUI" method="getPage"/>
+    <action name="back" class="com.wade.mobile.func.MobileUI" method="back"/>
+    <action name="loadingStart" class="com.wade.mobile.func.MobileUI" method="loadingStart"/>
+    <action name="loadingStop" class="com.wade.mobile.func.MobileUI" method="loadingStop"/>
+    <action name="getDate" class="com.wade.mobile.func.MobileUI" method="getDate"/>
+    <action name="getChoice" class="com.wade.mobile.func.MobileUI" method="getChoice"/>
+    <action name="getContactsView" class="com.wade.mobile.func.MobileUI" method="getContactsView"/>
+
+     <action name="openWindow" class="com.wade.mobile.func.MobileUI" method="openWindow"/>
+    <action name="openWindow" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="openWindow"/>
+    <!--自定义关闭，保留原有功能-->
+    <action name="closeWindow" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="closeWindow"/>
+    <action name="closeWindow" class="com.wade.mobile.func.MobileUI" method="closeWindow"/>
+    <action name="openDialog" class="com.wade.mobile.func.MobileUI" method="openDialog"/>
+    <action name="closeDialog" class="com.wade.mobile.func.MobileUI" method="closeDialog"/>
+    <action name="openSlidingMenu" class="com.wade.mobile.func.MobileUI" method="openSlidingMenu"/>
+    <action name="closeSlidingMenu" class="com.wade.mobile.func.MobileUI" method="closeSlidingMenu"/>
+
+    <!-- SoftKeyBoard -->
+    <action name="showKeyBoard" class="com.wade.mobile.func.SoftKeyBoard" method="showKeyBoard"/>
+    <action name="hideKeyBoard" class="com.wade.mobile.func.SoftKeyBoard" method="hideKeyBoard"/>
+    <action name="toggleKeyBoard" class="com.wade.mobile.func.SoftKeyBoard" method="toggleKeyBoard"/>
+    <!-- MobileCamera -->
+    <!--<action name="getPhoto" class="com.wade.mobile.func.MobileCamera" method="getPhoto"/>-->
+    <action name="getPhoto" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="getPhoto"/>
+    <action name="getPicture" class="com.wade.mobile.func.MobileCamera" method="getPicture"/>
+    <action name="getBase64Picture" class="com.wade.mobile.func.MobileCamera" method="getBase64Picture"/>
+    <action name="getCompressPicture" class="com.wade.mobile.func.MobileCamera" method="getCompressPicture"/>
+    <action name="scanQrCode" class="com.wade.mobile.func.MobileCamera" method="scanQrCode"/>
+    <action name="createQrCode" class="com.wade.mobile.func.MobileCamera" method="createQrCode"/>
+    <!-- MobileInfo -->
+    <action name="getTerminalType" class="com.wade.mobile.func.MobileInfo" method="getTerminalType"/>
+    <action name="getSysInfo" class="com.wade.mobile.func.MobileInfo" method="getSysInfo"/>
+    <action name="getNetInfo" class="com.wade.mobile.func.MobileInfo" method="getNetInfo"/>
+    <action name="getDirection" class="com.wade.mobile.func.MobileInfo" method="getDirection"/>
+    <!-- SwitchActivity -->
+    <action name="browserFile" class="com.ailk.mobile.client.func.SwitchActivity" method = "browserFile"/>
+    <action name="openDisplayPage" class="com.ailk.mobile.client.func.SwitchActivity" method = "openDisplayPage"/>
+    <!-- MobileMap -->
+<!--    <action name="location" class="com.wade.mobile.func.MobileMap" method="location"/>
+    <action name="markMap" class="com.wade.mobile.func.MobileMap" method="markMap"/>
+    <action name="selectLocation" class="com.wade.mobile.func.MobileMap" method="selectLocation"/>-->
+    <!-- MobileStorage -->
+    <action name="removeMemoryCache" class="com.wade.mobile.func.MobileStorage" method="removeMemoryCache"/>
+    <action name="clearMemoryCache" class="com.wade.mobile.func.MobileStorage" method="clearMemoryCache"/>
+    <action name="setMemoryCache" class="com.wade.mobile.func.MobileStorage" method="setMemoryCache"/>
+    <action name="getMemoryCache" class="com.wade.mobile.func.MobileStorage" method="getMemoryCache"/>
+    <action name="setOfflineCache" class="com.wade.mobile.func.MobileStorage" method="setOfflineCache"/>
+    <action name="getOfflineCache" class="com.wade.mobile.func.MobileStorage" method="getOfflineCache"/>
+    <action name="removeOfflineCache" class="com.wade.mobile.func.MobileStorage" method="removeOfflineCache"/>
+    <action name="clearOfflineCache" class="com.wade.mobile.func.MobileStorage" method="clearOfflineCache"/>
+    <!-- MobileFile -->
+    <action name="writeFile" class="com.wade.mobile.func.MobileFile" method="writeFile"/>
+    <action name="appendFile" class="com.wade.mobile.func.MobileFile" method="appendFile"/>
+    <action name="readFile" class="com.wade.mobile.func.MobileFile" method="readFile"/>
+    <action name="openFile" class="com.wade.mobile.func.MobileFile" method="openFile"/>
+    <action name="deleteFile" class="com.wade.mobile.func.MobileFile" method="deleteFile"/>
+    <action name="openFile" class="com.wade.mobile.func.MobileFile" method="openFile"/>
+    <action name="getAllFile" class="com.wade.mobile.func.MobileFile" method="getAllFile" />
+    <action name="cleanResource" class="com.wade.mobile.func.MobileFile" method="cleanResource" />
+
+<!--    &lt;!&ndash; added by yangsk &ndash;&gt;
+    <action name="openAnimation" class="com.ailk.mobile.client.func.SettingPlugin" method="openAnimation"/>
+    <action name="shutAnimation" class="com.ailk.mobile.client.func.SettingPlugin" method="shutAnimation"/>
+    <action name="setTitleText" class="com.ailk.mobile.client.func.BizPlugin" method="setBizTitle"/>-->
+
+    <!-- audio -->
+<!--    <action name="audioRecord" class="com.wade.mobile.func.MobileAudio" method="audioRecord"/>
+    <action name="audioPlay" class="com.wade.mobile.func.MobileAudio" method="audioPlay"/>-->
+
+    <!-- video -->
+<!--    <action name="recordVideo" class="com.wade.mobile.func.MobileVideo" method="recordVideo"/>
+    <action name="playVideo" class="com.wade.mobile.func.MobileVideo" method="playVideo"/>-->
+
+    <!--<action name="openApp" class="com.ai.mobile.func.OpenOtherApp" method="openApp"></action>-->
+    <!--自定义插件 打开第三方应用-->
+    <action name="openApp" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="openApp"/>
+    <!-- MobileDB -->
+    <action name="execSQL" class="com.wade.mobile.func.MobileDB" method="execSQL"></action>
+    <action name="insert" class="com.wade.mobile.func.MobileDB" method="insert"></action>
+    <action name="delete" class="com.wade.mobile.func.MobileDB" method="delete"></action>
+    <action name="update" class="com.wade.mobile.func.MobileDB" method="update"></action>
+    <action name="select" class="com.wade.mobile.func.MobileDB" method="select"></action>
+    <action name="selectFirst" class="com.wade.mobile.func.MobileDB" method="selectFirst"></action>
+
+    <!-- MobilePush -->
+<!--    <action name="registerForPush" class="com.ai.mobile.im.func.MobilePush" method="registerForPush"></action>
+    <action name="unregisterForPush" class="com.ai.mobile.im.func.MobilePush" method="unregisterForPush"></action>
+    <action name="sendText" class="com.ai.mobile.im.func.MobilePush" method="sendText"></action>
+    <action name="setCallbackForPush" class="com.ai.mobile.im.func.MobilePush" method="setCallbackForPush"></action>
+    <action name="registerForPushWithYunba"    class="com.ai.ipu.mobile.push.YunBaPush" method="registerForPush"></action>
+    <action name="unregisterForPushWithYunba"  class="com.ai.ipu.mobile.push.YunBaPush" method="unregisterForPush"></action>
+    <action name="sendTextWithYunba"           class="com.ai.ipu.mobile.push.YunBaPush" method="sendText"></action>
+    <action name="setCallbackForPushWithYunba" class="com.ai.ipu.mobile.push.YunBaPush" method="setCallbackForPush"></action>-->
+
+    <action name="getContacts" class="com.wade.mobile.func.MobileContactDetail" method="getContacts"></action>
+
+    <!-- keyboard -->
+    <action name="openKeyboard" class="com.wade.mobile.func.MobileKeyboard" method="openKeyboard"></action>
+
+<!--
+    <action name="setScreeLock" class="com.wade.mobile.func.MobileScreenLock" method="setScreeLock"></action>
+    <action name="screeUnlock" class="com.wade.mobile.func.MobileScreenLock" method="screeUnlock"></action>
+-->
+
+    <!-- open Activity -->
+    <action name="openNative" class="com.ai.cmcchina.crm.func.MobileOpenApp" method="openNative"></action>
+
+    <action name="openBrowser" class="com.ai.cmcchina.crm.func.MobileOpenApp" method="openBrowser" ></action>
+    <action name="getAppsConfig" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="getAppsConfig"></action>
+    <action name="saveCustomerPhoneNumAndName" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="saveCustomerPhoneNumAndName"></action>
+    <action name="saveStaffRegionId" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="saveStaffRegionId"></action>
+    <action name="setIsCollectedChange" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="setIsCollectedChange"></action>
+    <action name="getIsCollectedChange" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="getIsCollectedChange"></action>
+
+
+    <!-- 注销   -->
+    <action name="logout" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="logout"/>
+    <!-- 获取操作员信息    -->
+    <action name="getOperatorInfo" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="getOperatorInfo"></action>
+    <!-- 获取定位信息 -->
+    <action name="getLocation" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="getLocation"></action>
+    <!-- 订购营销活动 -->
+    <action name="getOrderMarketingInfo" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="getOrderMarketingInfo"></action>
+    <action name="setOrderMarketingInfo" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="setOrderMarketingInfo"></action>
+    <action name="changeMarketingInfoFlag" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="changeMarketingInfoFlag"></action>
+    <action name="getOrderMarketingCollectionInfo" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="getOrderMarketingCollectionInfo"></action>
+
+    <!-- 自定义工具类 -->
+    <action name="uploadImgToAddr" class="com.ai.cmcchina.multiple.func.ImgHandlerPlugin" method="uploadImgToAddr"></action>
+    <!-- 将数据保存在手机APPlication中 -->
+    <action name="saveParamsToApp" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="saveParamsToApp"></action>
+    <!-- 从手机APPlication中获取对应数据 -->
+    <action name="getParamsFromApp" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="getParamsFromApp"></action>
+    <!-- 判断用户是否具有主面菜单的权限 -->
+    <action name="isOperatorHasMenuAuthority" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="isOperatorHasMenuAuthority"></action>
+    <!-- 打开实名认证客户端 -->
+    <action name="openRealNameAuthClient" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="openRealNameAuthClient"></action>
+    <!-- 根据URL发送get请求-->
+    <action name="httpRequestGet" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="httpRequestGet"></action>
+
+    <!-- 读SIM卡获取sn号-->
+    <action name="getSimCardSNInfo" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="getSimCardSNInfo"></action>
+    <!-- 根据写卡数据写SIM卡 -->
+    <action name="writeSimCard" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="writeSimCard"></action>
+    <!-- 电子工单 -->
+    <action name="openElectronitWorkSheet" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="openElectronitWorkSheet"></action>
+    <!--ipu页面密码加密-->
+    <action name="encryptPassword" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="encryptPassword"></action>
+    <!-- 分享下载链接 -->
+    <action name="shareWeChat" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="shareDownloadUrl"></action>
+    <!-- 通过本地webView打开URL -->
+    <action name="openURLByWebView" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="openURLByWebView"></action>
+    <!-- 浏览本地文件 -->
+    <action name="selectLocalFile" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="selectLocalFile"></action>
+    <!-- 文件上传 -->
+    <action name="upLoadFileCustom" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="upLoadFile"></action>
+    <!-- 调用相机获取图片 并转成base64-->
+    <action name="takePhotoReturnBase64String" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="takePhotoAndBase64String"></action>
+    <!-- 图片 并转成base64-->
+    <action name="photosToBase64" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="photosToBase64"></action>
+
+<!--    &lt;!&ndash;打开客户经理地图页面&ndash;&gt;
+    <action name="openManagerMapPage" class="com.ai.cmcchina.esop.func.LocationPlugin" method="openManagerMapPage"></action>
+    &lt;!&ndash;打开管理员地图页面&ndash;&gt;
+    <action name="openAdminMapPage" class="com.ai.cmcchina.esop.func.LocationPlugin" method="openAdminMapPage"></action>
+    &lt;!&ndash;打开轨迹页面&ndash;&gt;
+    <action name="openLocationHisPage" class="com.ai.cmcchina.esop.func.LocationPlugin" method="openLocationHisPage"></action>
+    &lt;!&ndash;&lt;!&ndash;打开追踪页面&ndash;&gt;&ndash;&gt;
+    &lt;!&ndash;<action name="openFollowPage" class="com.ai.cmcchina.esop.func.LocationPlugin" method="openFollowPage"></action>&ndash;&gt;
+    &lt;!&ndash;更新位置信息页面&ndash;&gt;
+    <action name="openUpdateLocationPage" class="com.ai.cmcchina.esop.func.LocationPlugin" method="openUpdateLocationPage"></action>
+    &lt;!&ndash;唤起定位服务&ndash;&gt;
+    <action name="initLocationService" class="com.ai.cmcchina.esop.func.LocationPlugin" method="initLocationService"></action>
+    &lt;!&ndash;获取当前位置参数&ndash;&gt;
+    <action name="getCurrentLocation" class="com.ai.cmcchina.esop.func.LocationPlugin" method="getCurrentLocation"></action>
+    &lt;!&ndash;注册jpush服务&ndash;&gt;
+    <action name="registerPush" class="com.ai.cmcchina.esop.myPush.MyPush" method="registerPush"></action>-->
+
+    <!-- 调用相机获取图片 并转成base64-->
+    <action name="uploadIdCard" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="uploadIdCard"></action>
+
+    <!-- 自定义插件同closeWindow，关闭当前窗口-->
+    <action name="backManagerMapView" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="backManagerMapView"></action>
+
+    <!-- 创建二维码图片 根据URL转Base64数据-->
+    <action name="createQRCodeBase64" class="com.ai.cmcchina.multiple.func.ImgHandlerPlugin" method="createQRCode"></action>
+    <!-- 保存二维码图片 Base64数据转file-->
+    <action name="saveQRCode" class="com.ai.cmcchina.multiple.func.ImgHandlerPlugin" method="saveQRCode"></action>
+    <!-- 选择本地图片并压缩-->
+    <action name="getPicFromLibrary" class="com.ai.cmcchina.multiple.func.AppManagePlugin" method="getPicFromLibrary"></action>
+
+<!--    &lt;!&ndash;打开定位页面获取新位置信息&ndash;&gt;
+    <action name="openLocationPage" class="com.ai.cmcchina.esop.func.LocationPlugin" method="openLocationPage"></action>-->
+
+
+</actions>

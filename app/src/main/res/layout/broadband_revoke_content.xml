@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_shap_rectangle_blue_color" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单编码: " />
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/tv_order_ID_details" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/te3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务号码:" />
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/tv_service_numbers_details" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/te5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客户名称: " />
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/tv_customer_name_details" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/tes3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="宽带产品: " />
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/tv_name_of_plan_details" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/tea3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="状态:　　 " />
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/tv_state_details" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/teq3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="受理时间: " />
+            <TextView android:textSize="@dimen/text_size_medium" android:id="@id/tv_acceptance_time_details" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

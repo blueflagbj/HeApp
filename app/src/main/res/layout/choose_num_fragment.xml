@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:crm="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/condition_search_detail" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:background="@color/bg_rectangle_blue" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="包含\n号段" />
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TableLayout android:id="@id/num_segment_contain_table" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TableRow android:id="@id/num_segment_contain_table_row1">
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="134" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="135" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="136" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="137" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="139" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="150" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="151" />
+                    </TableRow>
+                    <TableRow android:id="@id/num_segment_contain_table_row2">
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="152" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="157" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="158" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="159" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="182" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="183" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="187" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="188" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <View android:background="@color/gray1" android:layout_width="wrap_content" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:background="@color/bg_rectangle_blue" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="包含\n号码" />
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TableLayout android:id="@id/num_contain_table" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TableRow android:id="@id/num_contain_table_tr1">
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一个8" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="66" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="168" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1314" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="520" />
+                    </TableRow>
+                    <TableRow android:id="@id/num_contain_table_tr2">
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="无4" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="两个8" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="518" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1818" />
+                        <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自定义" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <View android:background="@color/gray1" android:layout_width="wrap_content" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/custom_contain_num_ll" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自定义：" />
+            <EditText android:textSize="@dimen/text_size_medium" android:id="@id/custom_contain_num" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="自定义包含号码" android:maxEms="8" android:layout_weight="2.0" android:inputType="number" />
+            <Button android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="包含号码" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关键字：" />
+            <EditText android:textSize="@dimen/text_size_medium" android:id="@id/key_word_edit" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="请输入关键字" android:maxEms="11" android:layout_weight="2.0" android:inputType="number" />
+            <Button android:textSize="@dimen/text_size_medium" android:id="@id/num_search" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="号码搜索" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/blue" android:id="@id/previous_page" android:background="@drawable/list_item_selector" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上一页" android:layout_toLeftOf="@id/next_page" />
+            <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/blue" android:id="@id/next_page" android:background="@drawable/list_item_selector" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下一页" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/blue" android:gravity="center_horizontal" android:background="@drawable/bg_shap_rectangle_blue_color" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="号码列表" />
+        <com.ai.cmcchina.crm.customview.CustomGirdView android:gravity="center" android:id="@id/custom_gird_view" android:background="#ffe0e0e0" android:padding="1.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:listSelector="@drawable/list_item_selector" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:stretchMode="columnWidth" android:numColumns="2" android:choiceMode="singleChoice" />
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/red" android:gravity="center_horizontal" android:id="@id/tip_msg_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="未获取到数据" />
+        <Button android:textSize="@dimen/text_size_medium" android:id="@id/num_pre_search" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="查询已预占号码" />
+    </LinearLayout>
+</ScrollView>

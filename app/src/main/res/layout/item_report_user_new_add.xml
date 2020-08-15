@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/bg_report" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@android:color/black" android:gravity="center" android:id="@id/cell_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="小区名称" android:layout_weight="1.0" style="@style/report_TextView_style" />
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@android:color/black" android:gravity="center" android:id="@id/today_add" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="当日新增" android:layout_weight="1.0" style="@style/report_TextView_style" />
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@android:color/black" android:gravity="center" android:id="@id/month_add" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="当月新增" android:layout_weight="1.0" style="@style/report_TextView_style" />
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@android:color/black" android:gravity="center" android:id="@id/month_in" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="当月净增" android:layout_weight="1.0" style="@style/report_TextView_style" />
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@android:color/black" android:gravity="center" android:id="@id/bd_user" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="宽带用户数" android:layout_weight="1.0" style="@style/report_TextView_style" />
+</LinearLayout>

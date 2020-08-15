@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户号码:" android:ems="5" />
+                <EditText android:id="@id/user_number" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" />
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="认证方式:" android:ems="5" />
+                <RadioGroup android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@id/idcardAuthe" android:layout_weight="1.0">
+                    <RadioButton android:enabled="false" android:textColor="@android:color/black" android:id="@id/type_idcard" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="身份证" />
+                    <RadioButton android:enabled="false" android:textColor="@android:color/black" android:id="@id/type_password" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务密码" />
+                    <RadioButton android:textColor="@android:color/black" android:id="@id/type_random_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="随机码" />
+                </RadioGroup>
+            </TableRow>
+            <TableRow android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证件录入:" android:ems="5" />
+                <RadioGroup android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@id/idcardDocEntry" android:layout_weight="1.0">
+                    <RadioButton android:textColor="@android:color/black" android:id="@id/type_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="拍照识别" />
+                    <RadioButton android:textColor="@android:color/black" android:id="@id/type_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手工录入" />
+                </RadioGroup>
+            </TableRow>
+            <TableRow android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证件号码:" android:ems="5" />
+                <EditText android:id="@id/id_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:digits="1234567890xX" android:layout_weight="1.0" android:inputType="number" />
+            </TableRow>
+            <TableRow android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <Button android:textColor="#ff111111" android:id="@id/camera" android:background="@drawable/btn1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_column="1" android:text="拍照" />
+            </TableRow>
+            <TableRow android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务密码:" android:ems="5" />
+                <EditText android:id="@id/password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:inputType="numberPassword" />
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="随机码:" android:ems="5" />
+                <EditText android:id="@id/random_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="6" android:layout_weight="1.0" android:inputType="number" />
+                <Button android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/get_random_code" android:background="@drawable/btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:text="获取" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+            <Button android:id="@id/ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="确定" android:layout_weight="1.0" />
+            <Button android:textColor="@color/blue" android:id="@id/reset" android:background="@drawable/btn1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="重置" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

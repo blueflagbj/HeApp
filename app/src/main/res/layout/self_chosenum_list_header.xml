@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/bg_grid_header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_medium" android:textColor="@android:color/black" android:gravity="center_horizontal" android:id="@id/tx1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_form" android:text="号码" android:layout_toLeftOf="@id/bt1" android:layout_alignBottom="@id/bt1" />
+    <include android:id="@id/div1" android:layout_width="1.0dip" android:layout_height="@dimen/height_widget_large" android:layout_toRightOf="@id/tx1" layout="@layout/divider_vertical" />
+    <TextView android:textSize="@dimen/text_size_medium" android:textColor="@android:color/black" android:id="@id/bt1" android:paddingLeft="@dimen/height_widget_small" android:paddingRight="@dimen/height_widget_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginTop="@dimen/margin_form" android:layout_marginRight="45.0dip" android:text="操作" android:layout_alignParentRight="true" />
+</RelativeLayout>

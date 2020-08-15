@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:crm="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/divider_horizontal" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="@dimen/text_size_medium" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/tv1" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="号头" />
+            <include android:layout_width="1.0dip" android:layout_height="fill_parent" layout="@layout/divider_vertical" />
+            <Spinner android:gravity="center_vertical" android:id="@id/numTop" android:background="@drawable/drop_list" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_left_block" android:layout_weight="1.0" />
+            <include android:layout_width="1.0dip" android:layout_height="fill_parent" layout="@layout/divider_vertical" />
+            <TextView android:textSize="@dimen/text_size_medium" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/tv2" android:paddingLeft="@dimen/height_widget_small" android:paddingRight="@dimen/height_widget_small" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="包含" />
+            <include android:layout_width="1.0dip" android:layout_height="fill_parent" layout="@layout/divider_vertical" />
+            <Spinner android:gravity="center_vertical" android:id="@id/numCon" android:background="@drawable/drop_list" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_left_block" android:layout_weight="1.0" />
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/divider_horizontal" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="@dimen/text_size_medium" android:textColor="@android:color/black" android:id="@id/textv1" android:paddingLeft="@dimen/height_widget_small" android:paddingRight="@dimen/height_widget_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关键数据查询" android:layout_alignBaseline="@id/queryButton" android:layout_centerVertical="true" />
+            <include android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/textv1" layout="@layout/divider_vertical" />
+            <EditText android:textSize="@dimen/text_size_medium" android:textColor="@android:color/black" android:id="@id/etKeyValue" android:background="@drawable/textfield" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_form" android:layout_marginRight="@dimen/margin_form" android:singleLine="true" android:layout_toLeftOf="@id/queryButton" android:layout_toRightOf="@id/textv1" android:layout_alignBaseline="@id/queryButton" android:layout_alignBottom="@id/queryButton" android:layout_centerVertical="true" android:inputType="number" />
+            <include android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/etKeyValue" layout="@layout/divider_vertical" />
+            <Button android:textSize="@dimen/text_size_medium" android:textColor="@color/tab" android:gravity="center_vertical" android:id="@id/queryButton" android:background="@drawable/button_rounded_blue" android:paddingLeft="@dimen/height_widget_small" android:paddingTop="@dimen/margin_form" android:paddingRight="@dimen/height_widget_small" android:paddingBottom="@dimen/margin_form" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_form" android:layout_marginTop="@dimen/margin_form" android:layout_marginRight="@dimen/margin_form" android:text="号码搜索" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/divider_horizontal" />
+    </LinearLayout>
+    <com.ai.cmcchina.crm.util.PullToRefreshListView android:id="@id/dataListview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@drawable/list_item_selector" android:cacheColorHint="#00000000" android:divider="@android:drawable/divider_horizontal_bright" android:layout_weight="1.0" android:headerDividersEnabled="true" android:footerDividersEnabled="true" crm:mode="pullUpFromBottom" />
+    <Button android:id="@id/getCampNum" android:background="@drawable/button_shape" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="查询已预占号码" />
+</LinearLayout>

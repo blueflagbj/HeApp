@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <calloutViewStyle anchor="5" backgroundAlpha="255" backgroundColor="#ffffff" flat="true" frameColor="#000000" style.getCornerCurve="0" titleTextColor="#000000" titleTextSize="10" titleTextStyle="0" titleTextTypeFace="0" />
+</resources>

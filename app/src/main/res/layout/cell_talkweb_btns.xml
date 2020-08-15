@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_CRM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="CRM" />
+    <Button android:id="@id/btn_NextPage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NextPage" />
+    <Button android:id="@id/btn_PreAddPoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PreAddPoint" />
+    <Button android:id="@id/btn_setShowView_C" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="setShowView_C " />
+    <Button android:id="@id/btn_setEditView_C" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="setEditView_C " />
+</LinearLayout>

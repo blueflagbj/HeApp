@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/topbar_blue" android:id="@id/tv_ed_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="拖动地图.将目标点拖动到中心蓝色的位置" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_ed_company" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_ed_desc">
+        <TextView android:textSize="12.0sp" android:id="@id/ed_comp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单位：" />
+        <TextView android:textSize="12.0sp" android:id="@id/tv_ed_comp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_latlng" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/ll_ed_company">
+        <TextView android:textSize="12.0sp" android:id="@id/tv_ed_lat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        <TextView android:textSize="12.0sp" android:id="@id/tv_ed_lng" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:id="@id/tv_ed_addr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_below="@id/ll_latlng" />
+    <Button android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/btn_ed_edit" android:background="@drawable/conner_button_blue" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="修改" android:layout_below="@id/tv_ed_addr" />
+</RelativeLayout>

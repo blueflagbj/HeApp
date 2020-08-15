@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/titleView" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/text_size_medium" android:gravity="center" android:id="@id/leftBtn" android:background="@drawable/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/back" android:lines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="back" />
+        <com.ai.cmcchina.crm.view.MarqueeTextView android:textSize="@dimen/text_size_large" android:textColor="@android:color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/titleTxt" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="查看营销" android:singleLine="true" android:layout_centerInParent="true" android:marqueeRepeatLimit="marquee_forever" />
+    </RelativeLayout>
+    <com.talkweb.gis.GISMapView android:id="@id/gismapView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleView" />
+</RelativeLayout>

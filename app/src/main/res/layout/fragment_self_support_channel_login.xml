@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="475.0">
+        <TableRow android:background="@drawable/login_rectangle_hollow">
+            <TextView android:textColor="@android:color/white" android:id="@id/label_username" android:layout_marginLeft="8.0dip" android:text="4A账号：" style="@style/wrap_content" />
+            <AutoCompleteTextView android:id="@id/input_username" android:ems="10" android:maxLength="40" android:completionThreshold="1" android:inputType="text" android:imeOptions="actionNext" style="@style/login" />
+        </TableRow>
+        <View android:layout_width="fill_parent" android:layout_height="15.0dip" />
+        <TableRow android:background="@drawable/login_rectangle_hollow">
+            <TextView android:textColor="@android:color/white" android:id="@id/label_password" android:layout_marginLeft="8.0dip" android:text="@string/login_password" style="@style/wrap_content" />
+            <EditText android:id="@id/input_password" android:text="" android:maxLength="40" android:inputType="textPassword" android:imeOptions="actionNext" style="@style/login" />
+            <CheckBox android:textColor="@android:color/white" android:layout_gravity="right" android:id="@id/remember_pwd" android:layout_width="@dimen/button_width" android:layout_height="30.0dip" android:layout_marginRight="8.0dip" android:text="记住密码" />
+        </TableRow>
+        <View android:layout_width="fill_parent" android:layout_height="15.0dip" />
+        <TableRow android:background="@drawable/login_rectangle_hollow">
+            <TextView android:textColor="@android:color/white" android:id="@id/label_verifycode" android:layout_marginLeft="8.0dip" android:text="@string/login_verifycode" style="@style/wrap_content" />
+            <EditText android:id="@id/input_verifycode" android:text="" android:singleLine="true" android:inputType="number" android:imeOptions="actionDone" style="@style/login" />
+            <com.ai.cmcchina.crm.view.VerifyCodeView android:id="@id/view_verifycode" android:visibility="gone" android:layout_width="@dimen/button_width" android:layout_height="@dimen/widget_height" android:layout_marginLeft="@dimen/column_padding" />
+            <TextView android:layout_gravity="right" android:id="@id/textView_send_sms" android:layout_width="wrap_content" android:layout_height="@dimen/widget_height" android:layout_marginRight="8.0dip" android:text="发送验证" />
+        </TableRow>
+        <View android:layout_width="fill_parent" android:layout_height="8.0dip" />
+        <TextView android:textColor="@android:color/white" android:layout_gravity="right" android:id="@id/helper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  用户帮助" android:drawableLeft="@drawable/help" />
+        <Button android:id="@id/button_login" android:background="@drawable/login_rectangle_solid" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:text="@string/login" />
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:ellipsize="marquee" android:gravity="center" android:layout_marginTop="10.0dip" android:text="@string/message" android:marqueeRepeatLimit="marquee_forever" style="@style/match_parent" />
+    </TableLayout>
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="right" android:id="@id/gesture_password_login" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="手势密码登录" />
+</LinearLayout>

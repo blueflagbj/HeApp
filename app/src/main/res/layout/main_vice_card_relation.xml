@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="8.0dip">
+                    <TextView android:textSize="@dimen/text_size_medium" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="角色" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/text_size_medium" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="副卡类型" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/text_size_medium" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="成员号码" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/text_size_medium" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="短号" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/text_size_medium" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详情" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.ai.cmcchina.crm.customview.CustomListView android:id="@id/list_view" android:background="@drawable/shape_linearlayout_noconer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+            <Button android:enabled="true" android:id="@id/electronic_order" android:background="@drawable/btn_bg_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="用户签名并生成电子工单" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

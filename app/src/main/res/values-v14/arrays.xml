@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="custType">
+        <item>分包客户</item>
+        <item>中国移动非分包客户</item>
+        <item>中国联通</item>
+        <item>中国移动</item>
+        <item>虚拟运营商</item>
+        <item>中国电信</item>
+    </string-array>
+    <string-array name="layers_array">
+        <item>@string/normal</item>
+        <item>@string/satellite</item>
+    </string-array>
+    <string-array name="query_month">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+</resources>

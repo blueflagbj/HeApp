@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/bg_report" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/building_info" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="楼栋-单元" android:layout_weight="2.0" style="@style/report_TextView_style" />
+    <TextView android:gravity="center" android:id="@id/total_port" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="端口数" android:layout_weight="1.0" style="@style/report_TextView_style" />
+    <TextView android:gravity="center" android:id="@id/used_port" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="占用数" android:layout_weight="1.0" style="@style/report_TextView_style" />
+    <TextView android:gravity="center" android:id="@id/bd_num" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="用户数" android:layout_weight="1.0" style="@style/report_TextView_style" />
+</LinearLayout>

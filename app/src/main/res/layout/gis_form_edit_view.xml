@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/gisNameEt" android:background="@drawable/edit_text_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:minWidth="480.0dip" android:hint="名称" />
+    <EditText android:id="@id/gisDescEt" android:background="@drawable/edit_text_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:minWidth="480.0dip" android:hint="位置描述" android:minLines="1" android:inputType="textMultiLine" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <EditText android:enabled="false" android:id="@id/phoneNumEt" android:background="@drawable/edit_text_holo_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="手机号码" android:editable="false" android:layout_toLeftOf="@id/contactIV" />
+        <Button android:id="@id/contactIV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  添加公司  " />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/commitBt" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="采集" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/cancle" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

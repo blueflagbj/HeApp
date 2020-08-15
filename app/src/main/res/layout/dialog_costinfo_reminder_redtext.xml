@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ffffffff" android:gravity="center" android:id="@id/title" android:background="#ff0098ff" android:padding="7.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="安装费用修改" />
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="#ffff0000" android:id="@id/message" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="" android:lines="2" />
+        <LinearLayout android:orientation="horizontal" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应收金额:" />
+            <EditText android:textSize="@dimen/text_size_medium" android:id="@id/should_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:editable="false" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="实收金额:" />
+            <EditText android:textSize="@dimen/text_size_medium" android:id="@id/real_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="4" android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/black" android:id="@id/negativeButton" android:background="@drawable/btn_pressed1" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/cancel" />
+            <Button android:textColor="@android:color/white" android:id="@id/positiveButton" android:background="@drawable/btn_ok_bule" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/ok" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

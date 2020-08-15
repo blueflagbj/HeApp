@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/add_ads_rl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/rl_titlebar" android:background="#fffffff0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center|right" android:id="@id/back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.0dip" android:drawableLeft="@drawable/tw_btn_back_normal" android:layout_weight="9.0" />
+        <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/txt_serach" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="搜索关键字" android:singleLine="true" android:layout_weight="4.0" />
+        <Button android:textSize="15.0sp" android:id="@id/btn_search" android:background="@drawable/tw_selector_btn_loadmore" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="列表" android:layout_weight="8.0" />
+    </LinearLayout>
+    <com.talkweb.gis.GISMapView android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_titlebar" />
+</RelativeLayout>

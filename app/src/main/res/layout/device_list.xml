@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/title" />
+    <TextView android:textColor="@color/red" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bluetooth_device_tip" />
+    <TextView android:textColor="#ffffffff" android:id="@id/title_paired_devices" android:background="#ffd2d2d2" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bounded_devices" />
+    <ListView android:id="@id/paired_devices" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+    <TextView android:textColor="#ffffffff" android:id="@id/title_new_devices" android:background="#ffd2d2d2" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/other_devices" />
+    <ListView android:id="@id/new_devices" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+</LinearLayout>

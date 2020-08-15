@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notifications_f"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:id="@+id/text_notifications"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/button_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:freezesText="true"
+        android:text="查询数据"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_notifications" />
+
+    <Button
+        android:id="@+id/button_outXls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:freezesText="true"
+        android:text="导出数据"
+        app:layout_constraintLeft_toRightOf="@id/button_query"
+        app:layout_constraintTop_toTopOf="@id/button_query"  />
+
+    <Button
+        android:id="@+id/button_clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:freezesText="true"
+        android:text="清空数据"
+        app:layout_constraintLeft_toRightOf="@id/button_outXls"
+        app:layout_constraintTop_toTopOf="@id/button_query" />
+
+    <ListView
+        android:id="@+id/lv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/button_query"
+        app:layout_constraintTop_toBottomOf="@id/button_query" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

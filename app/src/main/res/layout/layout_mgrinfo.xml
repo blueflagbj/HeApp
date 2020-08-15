@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_pop_mgr_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/manager_info" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip">
+            <TextView android:id="@id/tv_mgr_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="某某某" style="@style/map_bottom_text" />
+            <TextView android:id="@id/tv_mgr_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 15308408401" android:layout_alignParentRight="true" style="@style/map_bottom_text" />
+            <ImageView android:id="@id/tel_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/icon_phone" android:layout_toLeftOf="@id/tv_mgr_tel" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/tv_mgr_status" android:background="@drawable/manager_stutas_bg" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="在途中" />
+            <TextView android:textSize="15.0sp" android:textColor="@android:color/darker_gray" android:id="@id/tv_mgr_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="15.11" android:layout_toRightOf="@id/tv_mgr_status" android:layout_centerVertical="true" style="@style/map_bottom_text" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="公里" android:layout_toRightOf="@id/tv_mgr_distance" android:layout_centerVertical="true" style="@style/map_bottom_text" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip">
+        <TextView android:id="@id/loc_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="定位时间:" style="@style/map_bottom_text" />
+        <TextView android:id="@id/tv_mgr_loc_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="2018-11-11 10:00:00" android:layout_toRightOf="@id/loc_time" style="@style/map_bottom_text" />
+        <TextView android:id="@id/loc_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="定位类型:" android:layout_below="@id/loc_time" style="@style/map_bottom_text" />
+        <TextView android:id="@id/tv_mgr_loc_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:text="网络" android:layout_toRightOf="@id/loc_type" android:layout_below="@id/tv_mgr_loc_time" style="@style/map_bottom_text" />
+        <TextView android:id="@id/loc_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="位置:" android:layout_below="@id/loc_type" style="@style/map_bottom_text" />
+        <TextView android:id="@id/tv_mgr_loc_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:text="中国河南省新乡市封丘县黄池路" android:layout_toRightOf="@id/loc_location" android:layout_below="@id/loc_type" style="@style/map_bottom_text" />
+    </RelativeLayout>
+</LinearLayout>

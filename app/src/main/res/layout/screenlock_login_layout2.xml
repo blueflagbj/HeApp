@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/screenlock_welcome_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.wade.mobile.common.screenlock.view.LocusPassWordView android:id="@id/lock_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/notify" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="请输入您设置的手势密码" />
+        <Button android:id="@id/forget_btn" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="忘记密码或者用其他方式登录" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

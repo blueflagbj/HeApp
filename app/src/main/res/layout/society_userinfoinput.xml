@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/title" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom" android:layout_below="@id/title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_large" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="入网信息" />
+                <TextView android:textColor="#ffff0000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="（带 * 的为必填项）" />
+            </LinearLayout>
+            <TableLayout android:orientation="vertical" android:background="@drawable/newaccount_item" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow>
+                    <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" * " />
+                        <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:gravity="right" android:id="@id/label_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务号码:" />
+                    </LinearLayout>
+                    <AutoCompleteTextView android:textSize="@dimen/text_size_medium" android:layout_gravity="center_vertical" android:id="@id/input_phone" android:background="@drawable/textfield" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="11" android:completionThreshold="1" android:layout_weight="1.0" android:inputType="phone" />
+                    <Button android:id="@id/realNameAuthen" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:text="实名认证" style="@style/btn_round_blue" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" * " />
+                        <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:id="@id/label_idcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="身份证号码:" />
+                    </LinearLayout>
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:id="@id/input_idcard" android:background="@drawable/textfield" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="18" android:digits="0123456789xyzXYZ" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionDone" />
+                </TableRow>
+                <TableRow android:id="@id/tr_guardin_name" android:visibility="gone" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" * " />
+                        <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="监护人姓名:" />
+                    </LinearLayout>
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:layout_gravity="center_vertical" android:id="@id/input_guardian_name" android:background="@drawable/textfield" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="text" />
+                    <Button android:id="@id/guardian_realNameAuthen" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:text="监护人认证" style="@style/btn_round_blue" />
+                </TableRow>
+                <TableRow android:id="@id/tr_guardin_card_no" android:visibility="gone" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" * " />
+                        <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证件号码:" />
+                    </LinearLayout>
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:id="@id/input_guardian_idcard" android:background="@drawable/textfield" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="18" android:digits="0123456789xyzXYZ" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionDone" />
+                </TableRow>
+            </TableLayout>
+            <TextView android:textSize="@dimen/text_size_large" android:textColor="#ff000000" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="套餐选择" />
+            <TableLayout android:orientation="vertical" android:background="@drawable/newaccount_item" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow android:id="@id/bind_fee_tablerow">
+                    <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:gravity="right" android:id="@id/label_kbfy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="捆绑费用:" />
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:id="@id/input_kbfy" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:id="@id/bind_product_tablerow" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:gravity="right" android:id="@id/label_kbcp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="捆绑产品:" />
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:id="@id/input_kbcp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" * " />
+                        <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择套餐:" />
+                    </LinearLayout>
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:id="@id/input_package" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <Button android:id="@id/btn_select_package" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:text="选择套餐" style="@style/btn_round_blue" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="营销活动:" />
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:id="@id/input_yxhd" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <Button android:id="@id/btn_select_yxhd" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:text="营销活动" style="@style/btn_round_blue" />
+                </TableRow>
+                <TableRow android:id="@id/sub_product_layout" android:visibility="gone" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="子产品:" />
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:id="@id/sub_product_edit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <Button android:id="@id/sub_product_btn" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:text="子产品" style="@style/btn_round_blue" />
+                </TableRow>
+                <TableRow android:id="@id/ldcpModule" android:visibility="gone" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="连带产品:" style="@style/newaccount_text" />
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:id="@id/input_ldcp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:id="@id/fee_total_module" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总费用:" />
+                    <EditText android:textSize="@dimen/text_size_medium" android:id="@id/fee_total" android:focusableInTouchMode="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:editable="false" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:id="@id/block_cell" android:visibility="gone" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择小区:" android:ems="5" />
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:id="@id/input_cell" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <Button android:id="@id/btn_select_cell" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:text="检索" style="@style/btn_round_blue" />
+                </TableRow>
+            </TableLayout>
+            <TextView android:textSize="@dimen/text_size_large" android:textColor="#ff000000" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客户信息" />
+            <TableLayout android:orientation="vertical" android:background="@drawable/newaccount_item" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow>
+                    <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" * " />
+                        <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客户姓名:" />
+                    </LinearLayout>
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:id="@id/input_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" * " />
+                        <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="性别:" />
+                    </LinearLayout>
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:id="@id/input_gender" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" * " />
+                        <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出生日期:" />
+                    </LinearLayout>
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:id="@id/input_birthday" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:editable="false" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" * " />
+                        <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="居住地址:" />
+                    </LinearLayout>
+                    <EditText android:textSize="@dimen/text_size_medium" android:id="@id/input_address" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="100" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" * " />
+                        <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证件地址:" />
+                    </LinearLayout>
+                    <EditText android:enabled="false" android:textSize="@dimen/text_size_medium" android:id="@id/input_cardaddress" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" * " />
+                        <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系人姓名:" />
+                    </LinearLayout>
+                    <EditText android:textSize="@dimen/text_size_medium" android:id="@id/input_contact_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </TableRow>
+                <TableRow android:layout_marginTop="10.0dip">
+                    <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" * " />
+                        <TextView android:textSize="@dimen/text_size_medium" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系人电话:" />
+                    </LinearLayout>
+                    <EditText android:textSize="@dimen/text_size_medium" android:id="@id/input_contact_phone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="11" android:layout_weight="1.0" android:inputType="phone" android:imeOptions="actionDone" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/next" android:background="@drawable/button_shape" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="下一步" android:layout_weight="1.0" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</RelativeLayout>

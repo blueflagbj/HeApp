@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名称" android:ems="5" />
+        <View android:background="@drawable/divider_simple_h" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <EditText android:id="@id/gisName" android:background="@drawable/edit_text_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="480.0dip" android:editable="false" />
+    </LinearLayout>
+    <View android:background="@drawable/divider_simple_v" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="描述" android:ems="5" />
+        <View android:background="@drawable/divider_simple_v" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <EditText android:id="@id/gisDesc" android:background="@drawable/edit_text_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="480.0dip" android:minLines="2" android:editable="false" android:inputType="textMultiLine" />
+    </LinearLayout>
+    <View android:background="@drawable/divider_simple_v" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <Button android:id="@id/seeCompanyButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="公司信息" />
+    </RelativeLayout>
+    <View android:background="@drawable/divider_simple_v" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <Button android:id="@id/editButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="  修改  " />
+        <Button android:id="@id/deleteButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="  删除  " android:layout_centerHorizontal="true" />
+        <Button android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="  取消  " android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

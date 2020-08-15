@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+//wesker add GreenDao start
+apply plugin: 'org.greenrobot.greendao'
+
+
+greendao {
+    schemaVersion 1 //数据库版本号
+    daoPackage 'com.heclient.heapp.db' // 设置DaoMaster、DaoSession、Dao 包名
+    targetGenDir 'src/main/java'      //设置DaoMaster、DaoSession、Dao目录,请注意，这里路径用/不要用.
+    generateTests false               //设置为true以自动生成单元测试。
+    targetGenDirTests 'src/main/java' //应存储生成的单元测试的基本目录。默认为 src / androidTest / java。
+}
+//wekser add GreenDao end
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.heclient.heapp"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "20.08.13.1"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['libs']
+
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.2.1'
+    implementation 'androidx.navigation:navigation-ui:2.2.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'com.alibaba:easyexcel:2.1.6'
+    implementation 'com.github.angads25:filepicker:1.1.1'
+    implementation 'org.apache.xmlbeans:xmlbeans:3.1.0'
+    implementation 'org.projectlombok:lombok:1.18.12'
+    implementation 'com.alibaba:fastjson:1.2.62'
+    implementation files('libs/jxl-2.6.12.jar')
+    implementation 'com.birbit:android-priority-jobqueue:3.0.0'
+    implementation files('libs/3des-1.0.jar')
+    implementation 'com.yanzhenjie:kalle:0.1.7'
+    implementation 'com.yanzhenjie:okalle:0.1.7'
+    implementation 'com.squareup.okhttp3:okhttp:4.3.1'
+    implementation 'androidx.preference:preference:1.1.0'
+    implementation files('libs/sunjce_provider.jar')
+    implementation files('libs/Amap_2DMap.jar')
+    implementation files('libs/AMap_Search.jar')
+    implementation files('libs/Android_Location.jar')
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation 'com.google.zxing:zxingorg:3.4.0'
+    implementation 'org.nutz:luajava:2.0.1-beta'
+    implementation 'com.samskivert:samskivert:1.9'
+    implementation 'com.mashape.unirest:unirest-java:1.4.9'
+    implementation 'com.samskivert:jmustache:1.15'
+    implementation files('libs/layoutlib.jar')
+    implementation 'com.belerweb:pinyin4j:2.5.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
+    implementation 'com.loopj.android:android-async-http:1.4.10'
+    implementation 'org.greenrobot:eventbus:3.2.0'
+    implementation 'com.yxt.opensdk.library_native_sqlite:sqlite:1.1.0'
+    implementation 'org.apache.commons:commons-csv:1.8'
+
+
+}

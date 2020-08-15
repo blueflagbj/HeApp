@@ -1,0 +1,216 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+
+    <style name="AudioDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/audio_activity_dialog</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:background">#00000000</item>
+    </style>
+    <style name="EditDisable">
+        <item name="android:enabled">false</item>
+        <item name="android:textColor">#ff3c3c3c</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:inputType">none</item>
+    </style>
+    <style name="Popup_bottom" parent="@android:style/Animation">
+
+    </style>
+    <style name="ShareApkDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="SlidingMenuTheme" parent="@android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="TextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHighlight">#ffff0000</item>
+        <item name="android:textColorHint">#ff0000ff</item>
+        <item name="android:textColorLink">#ff00ff00</item>
+    </style>
+    <style name="TextStyle.Button" parent="@style/TextStyle">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="TextStyle.Label" parent="@style/TextStyle" />
+    <style name="TextStyle.TextField" parent="@style/TextStyle" />
+    <style name="UndoToastText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:text">Default</item>
+        <item name="android:drawablePadding">4.0dip</item>
+    </style>
+    <style name="adaptive">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="adaptiveButton">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">3.0</item>
+    </style>
+    <style name="alert" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+    <style name="broadband_attr">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="btn_common" parent="@style/btn_text_on">
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">50.0dip</item>
+        <item name="android:minHeight">30.0dip</item>
+    </style>
+    <style name="btn_round_blue">
+        <item name="android:textSize">@dimen/text_size_small</item>
+
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_rounded_blue</item>
+        <item name="android:paddingLeft">10.0dip</item>
+
+        <item name="android:paddingRight">10.0dip</item>
+
+    </style>
+    <style name="btn_text_on">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowRadius">0.0</item>
+    </style>
+    <style name="crm" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:buttonStyle">@style/crm_button</item>
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="android:editTextStyle">@style/crm_edittext</item>
+        <item name="android:textViewStyle">@style/crm_textview</item>
+        <item name="TextStyleLabel">@style/TextStyle.Label</item>
+        <item name="TextStyleTextField">@style/TextStyle.TextField</item>
+        <item name="TextStyleButton">@style/TextStyle.Button</item>
+    </style>
+    <style name="crm_button" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">?TextStyleButton</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/btn</item>
+    </style>
+    <style name="crm_edittext" parent="@android:style/Widget.EditText">
+        <item name="android:textAppearance">?TextStyleTextField</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/edit_text</item>
+    </style>
+    <style name="crm_textview" parent="@android:style/Widget.TextView">
+        <item name="android:textAppearance">?TextStyleLabel</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="layout_full">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="layout_horizontal" parent="@style/layout_full">
+        <item name="android:layout_width">0.0px</item>
+    </style>
+    <style name="list_item">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ll_load_more" parent="@style/btn_common">
+        <item name="android:background">@drawable/selector_btn_loadmore</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginTop">3.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_marginBottom">3.0dip</item>
+        <item name="android:minHeight">35.0dip</item>
+    </style>
+    <style name="login">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">35.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="map_bottom_text">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+    <style name="match_parent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="newaccount_text">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">#ff999999</item>
+    </style>
+    <style name="report_TextView_style">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:padding">8.0dip</item>
+    </style>
+    <style name="report_spinner_style">
+        <item name="android:background">@drawable/report_spinner_selector_style</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:dropDownWidth">fill_parent</item>
+    </style>
+    <style name="text_depressed">
+        <item name="android:shadowColor">#ffcae3f4</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="text_shadow">
+        <item name="android:shadowColor">#88000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <style name="wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

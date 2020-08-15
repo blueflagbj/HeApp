@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/menu_name" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" style="@style/report_TextView_style" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow" android:layout_toRightOf="@id/menu_name" android:layout_alignTop="@id/menu_name" android:layout_alignBottom="@id/menu_name" />
+</RelativeLayout>

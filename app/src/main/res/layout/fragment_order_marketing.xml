@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TabHost android:id="@android:id/tabhost" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/tabs" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@android:id/tabs">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tab1" android:background="@drawable/tab_lying_inside" android:layout_width="40.0dip" android:layout_height="wrap_content" android:text="收\n藏\n的\n营\n销\n活\n动" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff03446b" android:gravity="center" android:id="@id/tab2" android:background="@drawable/tab_lying_inside" android:layout_width="40.0dip" android:layout_height="wrap_content" android:text="全\n部\n营\n销\n活\n动" android:layout_weight="1.0" />
+            </LinearLayout>
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/tabs" android:layout_below="@android:id/tabs">
+                <ListView android:id="@id/list1" android:layoutAnimation="@anim/list_anim_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@drawable/divider_simple_h" />
+                <com.ai.cmcchina.crm.view.PinnedExpandableListView android:id="@id/list2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childDivider="@drawable/divider_simple_h" android:divider="@drawable/divider_simple_h" />
+            </FrameLayout>
+            <TextView android:id="@id/tip_nothing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/text_shadow" />
+        </RelativeLayout>
+    </TabHost>
+</LinearLayout>

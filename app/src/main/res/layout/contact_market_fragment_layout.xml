@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_title" />
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabHost android:id="@id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/tab1" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <RelativeLayout android:background="@drawable/bg_item_pressed" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <EditText android:textColor="#ff006699" android:textColorHint="#ff006699" android:id="@id/input_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:hint="输入欲查询号码" android:maxLength="11" android:layout_toLeftOf="@id/search_num" android:layout_alignParentLeft="true" android:inputType="phone" android:imeOptions="actionDone" />
+                            <Button android:textColor="@android:color/white" android:id="@id/search_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查询" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <com.ai.cmcchina.crm.view.pulltorefresh.PullToRefreshListView android:id="@id/numList" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        <TextView android:textColor="@color/gray" android:gravity="center" android:id="@id/empty1" android:background="@drawable/bg_shape_rectangle" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="无分包客户数据" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/tab2" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ListView android:layout_gravity="center_horizontal" android:id="@id/marketList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" />
+                        <TextView android:textColor="@color/gray" android:gravity="center" android:id="@id/empty2" android:background="@drawable/bg_shape_rectangle" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="无匹配活动内容" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </RelativeLayout>
+</LinearLayout>

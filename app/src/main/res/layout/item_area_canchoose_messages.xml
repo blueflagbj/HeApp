@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <CheckBox android:id="@id/checked_box" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="true" />
+        <TextView android:id="@id/text_addrress" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="可选择的地址" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/gray1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

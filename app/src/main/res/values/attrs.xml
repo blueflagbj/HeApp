@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="animationDuration" format="integer" />
+    <attr name="position">
+        <enum name="bottom" value="1" />
+        <enum name="left" value="2" />
+        <enum name="right" value="3" />
+        <enum name="top" value="0" />
+    </attr>
+    <attr name="handle" format="reference" />
+    <attr name="content" format="reference" />
+    <attr name="linearFlying" format="boolean" />
+    <attr name="weight" format="fraction" />
+    <attr name="openedHandle" format="reference|color" />
+    <attr name="closedHandle" format="reference|color" />
+    <attr name="adapterViewBackground" format="reference|color" />
+    <attr name="headerBackground" format="reference|color" />
+    <attr name="headerTextColor" format="color" />
+    <attr name="mode">
+        <flag name="both" value="0x00000003" />
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+    </attr>
+    <attr name="TextStyleLabel" format="reference" />
+    <attr name="TextStyleTextField" format="reference" />
+    <attr name="TextStyleButton" format="reference" />
+</resources>

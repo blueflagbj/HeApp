@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/title" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_shap_rectangle_blue_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_shape_rectangle_orange_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+            <TextView android:textSize="@dimen/text_size_medium" android:textColor="@android:color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="小区开通信息公告" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" />
+    </LinearLayout>
+</LinearLayout>

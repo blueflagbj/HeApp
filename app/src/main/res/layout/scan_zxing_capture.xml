@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:layout_gravity="center" android:id="@id/preview_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/btn_cancel_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scan_cancel_normal" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ImageButton android:id="@id/btn_flashlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scan_flashlight_off" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <com.wade.mobile.common.scan.view.ViewfinderView android:id="@id/viewfinder_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</FrameLayout>
